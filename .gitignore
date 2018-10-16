@@ -1,0 +1,12 @@
+/target/
+/project/target/
+
+*.class
+*.log
+
+.cache/
+.history/
+.lib/
+
+.idea
+
