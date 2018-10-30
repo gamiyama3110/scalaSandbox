@@ -11,4 +11,13 @@ class HelloClass extends HelloTrait {
     println("Hello, Class")
   }
 
+  def sum(a: Int, b: Int): Int = {
+    // scalaはすべてメソッドらしい。
+    // 演算子書いても実はメソッド
+    // a+b = a.+(b)
+    // a.+(b)
+
+    val add: (Int, Int) => Int = (x,y) => x + y
+    add(a,b)
+  }
 }

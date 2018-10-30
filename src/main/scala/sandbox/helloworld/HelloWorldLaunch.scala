@@ -17,11 +17,20 @@ object HelloWorldLaunch {
     println("******************")
 
     // Object access
-    HelloObject.printHello()
+    HelloObject.printHello
 
     // Class access
-    var helloClass = new HelloClass
-    helloClass.printHello()
+    val helloClass = new HelloClass
+    helloClass.printHello
+
+    println("******************")
+
+    // 変数は val と var の2種類があり、valは定数（不変）、varは変数。
+    // scalaはvalのみで書くのが基本だとか。
+    val x=2
+    val y=1
+    println("sum "+x+"+"+y+"=?")
+    println(helloClass.sum(x,y))
 
   }
 }

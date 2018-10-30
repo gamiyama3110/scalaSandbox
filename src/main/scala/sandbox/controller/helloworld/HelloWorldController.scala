@@ -1,15 +1,12 @@
 package sandbox.controller.helloworld
 
-import java.beans.EventHandler
-import java.time.LocalDateTime
-
-import javafx.scene.control.Button
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.event.ActionEvent
 import scalafx.geometry.Pos
 import scalafx.scene.Scene
-import scalafx.scene.control.Label
+import scalafx.scene.control.{Button, Label}
+import scalafx.scene.input.MouseEvent
 import scalafx.scene.layout.VBox
 import scalafx.scene.paint.Color
 
@@ -30,11 +27,8 @@ object HelloWorldController extends JFXApp {
     layout.children.add(resultLabel)
 
     val button = new Button("まだまだ分からないことが多い")
-//    button.setOnAction(new EventHandler() {
-//      resultLabel.text = "マジ謎" + LocalDateTime.now()
-//    })
     layout.children.add(button)
-
     scene = new Scene(layout, 640.0, 480.0, Color.WHITE)
+
   }
 }
